@@ -1,11 +1,6 @@
 {
   "productos": [
     {
-      "id": 2,
-      "nombre": "Jugo de Naranja",
-      "precio": "1"
-    },
-    {
       "nombre": "Jugo de Naranja",
       "precio": "300",
       "id": 3
@@ -24,11 +19,6 @@
       "nombre": "Comida",
       "precio": 800,
       "id": 6
-    },
-    {
-      "nombre": "hamburguer",
-      "precio": 300,
-      "id": 7
     },
     {
       "nombre": "jugo de mango",
