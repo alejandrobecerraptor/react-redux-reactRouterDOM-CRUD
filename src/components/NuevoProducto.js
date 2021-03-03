@@ -1,27 +1,34 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 //actions de redux
 
 import {crearNuevoProductoAction} from '../actions/productoActions';
 
 const NuevoProducto = () => {
+    //state del componente
+    const [nombre,guardarNombre] =useState('');
+    const [precio,guardarPrecio] =useState(0);
     
     //utilizar use dispatch y te crea una funcion
     const dispatch = useDispatch();
 
     //mandar a llamar el action de productoAction
-    const agregarProducto = () => dispatch( crearNuevoProductoAction() );
+    const agregarProducto = producto => dispatch( crearNuevoProductoAction(producto) );
 
     // cuando el usuario haga submit
     const submitNuevoProducto = e => {
         e.preventDefault();
 
         //validar formulario
-
+        if(nombre.trim() === '' || precio <= 0){
+            return;
+        }
         //si no hay errores
 
         //crear el nuevo producto
-        agregarProducto();
+        agregarProducto({
+            nombre,precio
+        });
     }
 
     return ( 
@@ -41,7 +48,10 @@ const NuevoProducto = () => {
                                     type="text"
                                     className="form-control"
                                     placeholder="Nombre Producto"
-                                    name="nombre"/>
+                                    name="nombre"
+                                    value={nombre}
+                                    onChange={e => guardarNombre(e.target.value)}
+                                    />
                             </div>
                             <div className="form-group">
                                 <label>Precio Producto</label>
@@ -49,7 +59,10 @@ const NuevoProducto = () => {
                                     type="number"
                                     className="form-control"
                                     placeholder="Precio Producto"
-                                    name="precio" />
+                                    name="precio" 
+                                    value={precio}
+                                    onChange={e => guardarPrecio( Number(e.target.value))}
+                                    />
                             </div>
 
                             <button className="btn btn-primary font-weight-bold text-uppercase d-block w-100">
