@@ -39,6 +39,16 @@
       "nombre": "Rybi eye",
       "precio": 400,
       "id": 8
+    },
+    {
+      "nombre": "jugo de piña",
+      "precio": 100,
+      "id": 9
+    },
+    {
+      "nombre": "jugo de mango",
+      "precio": 450,
+      "id": 10
     }
   ]
 }
