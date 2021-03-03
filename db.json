@@ -1,11 +1,6 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Jugo de Zanahoria",
-      "precio": "31111"
-    },
-    {
       "id": 2,
       "nombre": "Jugo de Naranja",
       "precio": "1"
@@ -34,16 +29,6 @@
       "nombre": "hamburguer",
       "precio": 300,
       "id": 7
-    },
-    {
-      "nombre": "Rybi eye",
-      "precio": 400,
-      "id": 8
-    },
-    {
-      "nombre": "jugo de piña",
-      "precio": 100,
-      "id": 9
     },
     {
       "nombre": "jugo de mango",
