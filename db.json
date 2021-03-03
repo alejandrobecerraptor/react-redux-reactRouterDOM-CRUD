@@ -29,6 +29,16 @@
       "nombre": "Comida",
       "precio": 800,
       "id": 6
+    },
+    {
+      "nombre": "hamburguer",
+      "precio": 300,
+      "id": 7
+    },
+    {
+      "nombre": "Rybi eye",
+      "precio": 400,
+      "id": 8
     }
   ]
 }
