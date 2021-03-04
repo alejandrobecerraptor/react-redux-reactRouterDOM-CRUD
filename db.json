@@ -2,12 +2,12 @@
   "productos": [
     {
       "nombre": "Jugo de Naranja",
-      "precio": "300",
+      "precio": "400",
       "id": 3
     },
     {
-      "nombre": "Rib Eye 800g",
-      "precio": "200",
+      "nombre": "Rib Eye 750g",
+      "precio": "500",
       "id": 4
     },
     {
