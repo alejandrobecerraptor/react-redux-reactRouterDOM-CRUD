@@ -10,7 +10,11 @@ const inictialState = {
 
 export default function(state = inictialState, action){
     switch (action.type) {
-        
+        case MOSTRAR_ALERTA:
+            return {
+                ...state,
+                alerta: action.payload
+            }
         default:
             return state;
     }
