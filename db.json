@@ -6,7 +6,7 @@
       "id": 3
     },
     {
-      "nombre": "Rib Eye 750g",
+      "nombre": "Rib Eye 751g",
       "precio": "500",
       "id": 4
     },
@@ -16,14 +16,19 @@
       "id": 5
     },
     {
-      "nombre": "Comida",
-      "precio": 800,
-      "id": 6
-    },
-    {
       "nombre": "jugo de mango",
       "precio": 450,
       "id": 10
+    },
+    {
+      "nombre": "tomate",
+      "precio": 567,
+      "id": 11
+    },
+    {
+      "nombre": "hamburguer",
+      "precio": 566,
+      "id": 12
     }
   ]
 }

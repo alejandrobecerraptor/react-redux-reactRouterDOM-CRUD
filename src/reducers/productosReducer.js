@@ -73,7 +73,7 @@ export default function(state = initialState, action){
                 ...state,
                 productoeditar: null,
                 productos: state.productos.map(producto => 
-                    producto.id == action.payload.id ? producto = action.payload : producto
+                    producto.id === action.payload.id ? producto = action.payload : producto
                 )
             }
         
